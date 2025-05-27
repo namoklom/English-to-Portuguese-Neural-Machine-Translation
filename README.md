@@ -115,7 +115,7 @@ samples, log_probs = generate_samples(trained_translator, 'I love languages')
 
 for s, l in zip(samples, log_probs):
     print(f"Translated tensor: {s} has logit: {l:.3f}")
-'''
+```
 
 ---
 
