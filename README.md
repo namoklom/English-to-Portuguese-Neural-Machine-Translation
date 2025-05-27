@@ -91,13 +91,31 @@ The model consists of three main components:
 
 ## 📈 Evaluation
 
-- **Qualitative Evaluation:** Manually inspecting sample translations to assess fluency and correctness.
-- **Quantitative Metrics:**  
-  - BLEU (Bilingual Evaluation Understudy) score to compare model output to reference translations.  
-  - Optionally METEOR or ROUGE scores.
-- **Visualization:**  
-  - Plot training/validation loss and accuracy curves.  
-  - Attention heatmaps to visualize where the model focuses during translation.
+### Minimum Bayes-Risk Decoding (MBR)
+
+Instead of selecting the highest probability token at each step (greedy decoding), Minimum Bayes-Risk Decoding (MBR) considers multiple candidate translations and chooses the one that minimizes expected loss (or maximizes similarity) with respect to the other candidates.
+
+---
+
+### Generating Multiple Samples
+
+We generate several candidate translations using temperature-controlled sampling:
+
+```python
+def generate_samples(model, text, n_samples=4, temperature=0.6):
+    samples, log_probs = [], []
+
+    for _ in range(n_samples):
+        _, logp, sample = translate(model, text, temperature=temperature)
+        samples.append(np.squeeze(sample.numpy()).tolist())
+        log_probs.append(logp)
+
+    return samples, log_probs
+
+samples, log_probs = generate_samples(trained_translator, 'I love languages')
+
+for s, l in zip(samples, log_probs):
+    print(f"Translated tensor: {s} has logit: {l:.3f}")
 
 ---
 
