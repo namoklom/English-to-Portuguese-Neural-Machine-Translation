@@ -2,24 +2,7 @@
 
 This project implements a **Neural Machine Translation (NMT)** system to translate sentences from **English to Portuguese**. It employs a sequence-to-sequence (Seq2Seq) architecture using **LSTM (Long Short-Term Memory)** networks enhanced with an **attention mechanism**, all developed using **TensorFlow 2.x**. The goal is to provide a deep learning based approach that effectively learns the mapping between English and Portuguese sentences, capturing semantic and syntactic relationships better than traditional statistical or rule-based methods.
 
----
-
-## 📌 Table of Contents
-
-- [Overview](#-overview)  
-- [Model Architecture](#-model-architecture)  
-- [Dataset](#-dataset)  
-- [Preprocessing](#-preprocessing)  
-- [Training](#-training)  
-- [Inference](#-inference)  
-- [Evaluation](#-evaluation)
-- [Tools](#-tools)   
-- [Installation & Setup](#-installation--setup)  
-- [Usage](#-usage)  
-- [Results & Visualization](#-results--visualization)  
-- [Future Work](#-future-work)  
-- [References](#-references)  
-- [License](#-license)  
+![image](https://github.com/user-attachments/assets/2baa89c7-ece8-4d3e-9732-a0cf3db85c86)
 
 ---
 
