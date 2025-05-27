@@ -95,8 +95,6 @@ The model consists of three main components:
 
 Instead of selecting the highest probability token at each step (greedy decoding), Minimum Bayes-Risk Decoding (MBR) considers multiple candidate translations and chooses the one that minimizes expected loss (or maximizes similarity) with respect to the other candidates.
 
----
-
 ### Generating Multiple Samples
 
 We generate several candidate translations using temperature-controlled sampling:
