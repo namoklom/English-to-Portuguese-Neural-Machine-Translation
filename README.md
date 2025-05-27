@@ -1,4 +1,4 @@
-# 🧠 English-to-Portuguese Neural Machine Translation (NMT)
+# English-to-Portuguese Neural Machine Translation (NMT) with LSTM-RNN Architecture
 
 This project implements a **Neural Machine Translation (NMT)** system to translate sentences from **English to Portuguese**. It employs a sequence-to-sequence (Seq2Seq) architecture using **LSTM (Long Short-Term Memory)** networks enhanced with an **attention mechanism**, all developed using **TensorFlow 2.x**. The goal is to provide a deep learning based approach that effectively learns the mapping between English and Portuguese sentences, capturing semantic and syntactic relationships better than traditional statistical or rule-based methods.
 
@@ -12,7 +12,8 @@ This project implements a **Neural Machine Translation (NMT)** system to transla
 - [Preprocessing](#-preprocessing)  
 - [Training](#-training)  
 - [Inference](#-inference)  
-- [Evaluation](#-evaluation)  
+- [Evaluation](#-evaluation)
+- [Tools](#-tools)   
 - [Installation & Setup](#-installation--setup)  
 - [Usage](#-usage)  
 - [Results & Visualization](#-results--visualization)  
@@ -108,6 +109,21 @@ The model consists of three main components:
 - **Visualization:**  
   - Plot training/validation loss and accuracy curves.  
   - Attention heatmaps to visualize where the model focuses during translation.
+
+---
+
+## 🛠️ Tools
+
+| Tool / Library       | Purpose                                        | Notes                                      |
+|---------------------|------------------------------------------------|--------------------------------------------|
+| **TensorFlow 2.x**   | Deep learning framework for model building and training | Core library for all neural network operations |
+| **NumPy**            | Numerical computing and array manipulation     | Used for data handling and preprocessing   |
+| **Matplotlib**       | Plotting training metrics and results          | Visualizes loss, accuracy, and attention   |
+| **Seaborn**          | Statistical data visualization                  | Enhanced visualization styles for plots    |
+| **NLTK**             | Natural Language Processing utilities           | Tokenization, evaluation metrics (optional)|
+| **Python 3.7+**      | Programming language                             | Primary language used                       |
+| **Git**              | Version control system                           | Source code management                      |
+| **Jupyter Notebook** | Experimentation and visualization (optional)   | Useful during development                   |
 
 ---
 
