@@ -36,6 +36,8 @@ The model consists of three main components:
 - **LSTM Layer:** Receives previous output and context vector to generate next hidden state.
 - **Dense Output Layer:** Maps LSTM outputs to vocabulary size, producing logits for next-token prediction.
 
+![image](https://github.com/user-attachments/assets/572a74fa-ae51-475d-8633-b761c8352b29)
+
 ---
 
 ## 📚 Dataset
